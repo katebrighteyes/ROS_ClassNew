@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
-  actionlib_msgs
+  #actionlib_msgs
 )
 
 ## Generate services in the 'srv' folder
@@ -16,21 +16,21 @@ add_service_files(
 )
 
 ## Generate actions in the 'action' folder
-add_action_files(
-  FILES
-  Timer.action
-  Talk.action
-)
+#add_action_files(
+#  FILES
+#  Timer.action
+#  Talk.action
+#)
 
 generate_messages(
   DEPENDENCIES
-  actionlib_msgs
+#  actionlib_msgs
   std_msgs
 )
 
 catkin_package(
 #  INCLUDE_DIRS include
-  CATKIN_DEPENDS message_runtime actionlib_msgs
+  CATKIN_DEPENDS message_runtime #actionlib_msgs
 
 )
 
