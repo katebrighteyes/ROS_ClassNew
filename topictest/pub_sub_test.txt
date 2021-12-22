@@ -24,6 +24,8 @@ gedit test_pub_topic.py
 
 python test_pub_topic.py 
 or
+
+chmod 777 test_pub_topic.py
 rosrun ros_topic_test test_pub_topic.py
 
 ---------------------------------
@@ -42,6 +44,8 @@ gedit test_sub_topic.py
 
 python test_sub_topic.py
 or
+
+test_sub_topic.py
 rosrun ros_topic_test test_sub_topic.py
 
  (다른 터미널)
