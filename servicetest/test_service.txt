@@ -6,6 +6,8 @@ catkin_create_pkg test_ros_service std_msgs rospy
 
 cd ..
 
+rosservice list
+
 catkin_make
 
 -------------------------------
@@ -44,6 +46,8 @@ gedit service_server.py
 rosrun test_ros_service service_server.py
 
 ---------------------------------
+
+rosservice list
 
 # make file "test_sub_topic.py" and type code.
 
