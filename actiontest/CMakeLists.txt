@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(test_ros_action)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -14,11 +14,6 @@ find_package(catkin REQUIRED COMPONENTS
    Complex.msg
 
 )
-## Generate services in the 'srv' folder
-#add_service_files(
-#  FILES
-#  WordCount.srv
-#)
 
 ## Generate actions in the 'action' folder
 add_action_files(
@@ -40,6 +35,9 @@ catkin_package(
 )
 
 
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
