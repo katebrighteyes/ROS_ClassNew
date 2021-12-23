@@ -1,0 +1,58 @@
+~/catkin_ws/src/
+
+catkin_create_pkg test_ros_action std_msgs rospy
+
+cd ..
+
+catkin_make
+
+------------------------
+cd ~/catkin_ws/src/test_ros_action/src
+
+mkdir action
+
+cd action
+
+gedit Talk.action
+gedit Timer.action
+
+-----------------------
+roscore 
+
+-------------------------
+
+# make file "test_pub_topic.py" and type code and test. 
+
+(다른 터미널)
+
+cd ~/catkin_ws/src/test_ros_action/src
+
+gedit simple_action_server.py 
+
+-> git 허브 파일을 복사해서 작성하세요
+
+
+
+---------------------------------
+
+# make simple example codes.
+
+ (다른 터미널)
+
+cd ~/catkin_ws/src/test_ros_action/src
+
+gedit simple_action_client.py 
+
+-> git 허브 파일을 복사해서 작성하세요
+
+# 실행
+
+rosrun test_ros_action simple_action_server.py
+
+rosrun test_ros_action simple_action_client.py
+
+ (다른 터미널)
+ 
+rqt_graph
+
+
