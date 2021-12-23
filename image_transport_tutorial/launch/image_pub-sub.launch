@@ -1,0 +1,6 @@
+<launch>
+  <node name="my_publisher" pkg="image_transport_tutorial" type="my_publisher" >
+  </node>
+  <node name="my_subscriber" pkg="image_transport_tutorial" type="my_subscriber" >
+  </node>
+</launch>

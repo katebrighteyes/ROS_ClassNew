@@ -1,0 +1,8 @@
+<launch>
+  <node name="my_publisher2" pkg="image_transport_tutorial" type="my_publisher2" >
+  </node>
+  <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
+    <remap from="image" to="camera/image"/>
+    <param name="autosize" value="true" />
+  </node>
+</launch>
