@@ -4,18 +4,7 @@ cd ~/catkin_ws/src/
 
 catkin_create_pkg test_ros_service std_msgs rospy
 
-cd ..
-
-rosservice list
-
-catkin_make
-
 -------------------------------
-(다른 터미널)
-cd ~/catkin_ws/src/test_ros_service/
-
-gedit
-------------------------
 cd ~/catkin_ws/src/test_ros_service
 
 mkdir srv
@@ -23,6 +12,8 @@ mkdir srv
 cd srv
 
 gedit WordCount.srv
+
+catkin_make
 
 -----------------------
 (다른 터미널)
