@@ -13,6 +13,8 @@ cd srv
 
 gedit WordCount.srv
 
+cd ~/catkin_ws
+
 catkin_make
 
 -----------------------
