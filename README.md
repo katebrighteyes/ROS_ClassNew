@@ -22,3 +22,11 @@ https://drive.google.com/drive/folders/1w58FTlRVFDMluOWeL1IN-DznaXlgFbVX?usp=sha
 1. (시연) 터틀봇 slam / navigation
 2. ros2 설치
 3. ros2 기본 예제
+
+PC 혹은 VM에 OpenCV가 안깔려있으시면
+
+wget https://raw.githubusercontent.com/katebrighteyes/ROS_ClassNew/main/Install_OpenCV.sh
+
+chmod 777 Install_OpenCV.sh
+
+./Install_OpenCV.sh
