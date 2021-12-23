@@ -7,4 +7,13 @@ cd ..
 catkin_make
 
 ------------------------
+cd ~/catkin_ws/src/test_topic_msg
+
+mkdir msg
+
+cd msg
+
+gedit Complex.msg
+
+------------------------
 cd ~/catkin_ws/src/test_topic_msg/src
