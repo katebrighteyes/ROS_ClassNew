@@ -16,4 +16,17 @@ cd msg
 gedit Complex.msg
 
 ------------------------
+cd ~/catkin_ws/src/test_topic_msg
+
+gedit CMakeLists.txt
+
+gedit package.xml.
+
+------------------------
 cd ~/catkin_ws/src/test_topic_msg/src
+
+gedit topic_publisher.py
+
+gedit topic_subscriber.py
+
+
