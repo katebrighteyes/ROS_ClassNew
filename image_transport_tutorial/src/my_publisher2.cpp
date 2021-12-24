@@ -24,6 +24,7 @@ int main(int argc, char** argv)
 		return -1;
 	}
   ros::Rate loop_rate(1);
+  cv::Mat image;
   while (nh.ok()) {
     cap >> image;
     sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();   
