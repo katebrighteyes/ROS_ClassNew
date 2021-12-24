@@ -20,6 +20,11 @@ add_executable(my_publisher src/my_publisher.cpp)
 add_dependencies(my_publisher ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(my_publisher ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
+# add the publisher example2
+add_executable(my_publisher2 src/my_publisher2.cpp)
+add_dependencies(my_publisher2 ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(my_publisher2 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
 # add the subscriber example
 add_executable(my_subscriber src/my_subscriber.cpp)
 add_dependencies(my_subscriber ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
