@@ -1,0 +1,50 @@
+
+# jetson-inference libraries
+sudo apt-get install git cmake
+
+# clone the repo and submodules
+
+git clone https://github.com/dusty-nv/jetson-inference
+cd jetson-inference
+git submodule update --init
+
+# build from source
+mkdir build
+cd build
+cmake ../
+make
+
+# install libraries
+sudo make install
+ldconfig
+
+# test
+detectnet /dev/video0
+
+======================
+
+
+# ros_deep_learning &&  jetbot_ros
+
+# install dependencies
+sudo apt-get install ros-melodic-vision-msgs ros-melodic-image-transport ros-melodic-image-publisher
+
+# clone the repo
+cd ~/catkin_ws/src
+git clone https://github.com/dusty-nv/ros_deep_learning
+
+# build the package
+$ cd ../    
+$ catkin_make
+
+=======================
+
+ roslaunch ros_deep_learning imagenet.ros1.launch input:=/dev/video0 output:=display://0
+ 
+ 
+ 
+ 
+ 
+
+
+
